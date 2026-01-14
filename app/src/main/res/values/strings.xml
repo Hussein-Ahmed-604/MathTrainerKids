@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Math Trainer Kids</string>
+    <string name="enter_answer">Введите ответ</string>
+    <string name="check_answer">ПРОВЕРИТЬ</string>
+</resources>

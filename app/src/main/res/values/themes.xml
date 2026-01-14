@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Theme أساسي يعمل مع AppCompat -->
+    <style name="Theme.MathTrainer" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#2196F3</item>
+        <item name="colorPrimaryDark">#1976D2</item>
+        <item name="colorAccent">#FF9800</item>
+
+        <!-- خلفية التطبيق -->
+        <item name="android:windowBackground">#E3F2FD</item>
+
+        <!-- لون شريط الحالة -->
+        <item name="android:statusBarColor">?attr/colorPrimaryDark</item>
+
+        <!-- لون النصوص -->
+        <item name="android:textColorPrimary">#212121</item>
+        <item name="android:textColorSecondary">#757575</item>
+    </style>
+</resources>

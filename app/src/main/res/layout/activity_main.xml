@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E3F2FD"
+    android:padding="16dp">
+
+    <!-- شريط المعلومات العلوي -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="#2196F3"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/textLevel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Уровень 1: Начинающий"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/heartsContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="10dp">
+            <!-- ستتم إضافة القلوب هنا برمجياً -->
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Очки: 0"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- عداد الأسئلة -->
+    <TextView
+        android:id="@+id/textQuestionCounter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Вопрос: 1/5"
+        android:textSize="16sp"
+        android:textColor="#1976D2"
+        android:gravity="center"
+        android:layout_marginBottom="10dp" />
+
+    <!-- المؤقت -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/textTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="45"
+            android:textSize="36sp"
+            android:textColor="#1976D2"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⏰ Время"
+            android:textSize="14sp"
+            android:textColor="#1976D2"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+
+    <!-- السؤال -->
+    <TextView
+        android:id="@+id/textQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="🍎 + 🍎 = ?"
+        android:textSize="32sp"
+        android:textColor="#0D47A1"
+        android:textStyle="bold" />
+
+    <!-- حقل الإجابة -->
+    <EditText
+        android:id="@+id/editAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="Введите ответ"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:background="@drawable/edittext_bg" />
+
+    <!-- زر التحقق -->
+    <Button
+        android:id="@+id/buttonCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ПРОВЕРИТЬ"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="#4CAF50" />
+
+    <!-- رسالة النتيجة -->
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:maxLines="3"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:textColor="#D32F2F"
+        android:background="#FFEBEE"
+        android:visibility="gone"
+        android:textStyle="bold" />
+
+    <!-- رسالة التشجيع -->
+    <TextView
+        android:id="@+id/txtEncouragement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="#1976D2"
+        android:visibility="gone"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>
